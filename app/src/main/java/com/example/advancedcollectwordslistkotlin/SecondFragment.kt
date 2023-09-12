@@ -33,7 +33,7 @@ class SecondFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val wordsArray = arguments?.getStringArray("wordsArray")
-        val wordsDisplay = wordsArray?.joinToString("\n") ?: "No words available"
+        val wordsDisplay = if (wordsArray.isNullOrEmpty()) "The list is empty!" else wordsArray.joinToString("\n")
         binding.textViewWords.text = wordsDisplay
 
         binding.buttonGoBack.setOnClickListener{

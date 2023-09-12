@@ -9,7 +9,7 @@
     tools:context=".FirstFragment">
 
 
-    <EditText
+    <TextView
         android:id="@+id/Title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
