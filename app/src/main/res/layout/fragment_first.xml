@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FirstFragment">
+
+
+    <EditText
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Collect Words One!"
+        android:background="@color/material_dynamic_primary70"
+        />
+
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Write a word!"
+        android:inputType="text"
+        />
+
+    <Button
+        android:id="@+id/button_saveWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE WORD"
+        />
+
+    <Button
+        android:id="@+id/button_clearWords"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:padding="16dp"
+        android:text="CLEAR WORDS"
+        />
+
+    <TextView
+        android:id="@+id/textView_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <Button
+        android:id="@+id/button_showWords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHOW WORDS" />
+
+
+    </LinearLayout>
